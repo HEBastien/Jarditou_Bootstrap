@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jarditou</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <header>
+        <div class="row ">
+            <div class="col-auto mr-auto">
+            <img src="assets/images/jarditou_logo.jpg" class="img-fluid w-25 h25 col-md-4" alt="logo jarditou" title="logo jarditou">
+            </div>
+            <div class="col-auto fs-1 fw-light">Tout le jardins</div>
+          </div>
+        </header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand">Jarditou.com</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="index.html">Acceuil</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="tableau.html">Tableau</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Votre promotion" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Rechercher</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        <img src="assets/images/promotion.jpg" alt="Promotion" title="Promotion" class="img-fluid w-100">
+    <section>
+        <article>
+            <p>*Ces zones sont obligatoires</p>
+
+            <form action="#" method="post"  id="Formulaire">
+                <fieldset>
+                <legend>Vos Coordonnées</legend>
+                <div class="mb-3">
+                  <label for="nom" class="form-label">Nom*</label>
+                  <input type="text" class="form-control" id="nom">
+                  <div id="errorNom" class="text-danger"></div>
+                </div>
+                <div class="mb-3">
+                    <label for="prenom" class="form-label">Prénom*</label>
+                    <input type="text" class="form-control" id="prénom">
+                    <div id="errorPrenom" class="text-danger"></div>
+                  </div>
+                </fieldset>
+                  <p>Sexe*</p>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Masculin" id="masculin" value="Masculin">
+                    <label class="form-check-label" for="masculin">Masculin</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="feminin" id="féminin" value="Feminin">
+                    <label class="form-check-label" for="feminin">Féminin</label>
+                  </div>
+                  <div id="errorSex" class="text-danger"></div>
+                  <br>
+                  <div class="mb-3">
+                    <label for="Date" class="form-label">Date de naissance*</label>
+                    <input type="date" class="form-control" id="Date" value="">
+                    <div id="errorDate" class="text-danger"></div>
+                  </div>      
+                  <div class="mb-3">
+                    <label for="Cp" class="form-label">Code Postal*</label>
+                    <input type="text" class="form-control" id="Cp">
+                    <div id="errorCp" class="text-danger"></div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="Adresse" class="form-label">Adresse</label>
+                    <input type="text" class="form-control" id="Adresse">
+                  </div>  
+                  <div class="mb-3">
+                    <label for="Ville" class="form-label">Ville</label>
+                    <input type="text" class="form-control" id="Ville">
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Adresse Mail*</label>
+                    <input type="text" class="form-control" id="email" placeholder="Sara.DeCastro@sensei.fr">
+                    <div id="errorEmail" class="text-danger"></div>
+                  </div>
+                  <legend>Votre demande</legend>
+                  <div class="mb-3">
+                    <label for="Sujet" class="form-label">Sujet*</label>
+                  <select class="form-select" id="Sujet">
+                    <option selected value="">Veulliez séléctionner un sujet</option>
+                    <option value="Mescommandes">Mes commandes</option>
+                    <option value="Question sur un produit">Question sur un produit</option>
+                    <option value="Réclamation">Réclamations</option>
+                    <option value="Autres">Autres</option>
+                  </select>
+                  <div id="errorSujet" class="text-danger"></div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="Votrequestion" class="form-label">Votre Question*</label>
+                    <textarea class="form-control" name="commentaire" id="Votrequestion"></textarea>
+                    <div id="errorQuest" class="text-danger"></div>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="Check" value="Check" id="check">
+                    <label class="form-check-label" for="Check">
+                        J'accepte le traitement informatique de ce formulaire
+                    </label>
+                  <div id="errorCheck" class="text-danger"></div>
+                  </div>
+                  <br>
+                <button type="submit" class="btn btn-dark">Envoyer</button>
+                <button type="reset" class="btn btn-dark">Annuler</button>
+              </form>
+        </article>
+        </section>
+        <hr>
+        <footer>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark"">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link" href="#">Mention légales</a>
+                      <a class="nav-link" href="#">Horaires</a>
+                      <a class="nav-link" href="#">Plan du site</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js" ></script>
+    </body>
+</html>
